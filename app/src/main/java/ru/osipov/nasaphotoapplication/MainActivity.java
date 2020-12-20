@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //TODO
+                    PhotoListActivity.start(v.getContext(), dateDTO.getDate());
                 }
             });
         }
