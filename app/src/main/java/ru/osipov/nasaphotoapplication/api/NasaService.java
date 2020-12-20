@@ -24,6 +24,10 @@ public class NasaService {
         api = retrofit.create(NasaApi.class);
     }
 
+    public NasaApi getApi(){
+        return api;
+    }
+
     private OkHttpClient createOkhttpClient(){
         final OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
         httpClient.addInterceptor(new Interceptor() {
