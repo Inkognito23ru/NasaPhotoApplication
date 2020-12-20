@@ -115,7 +115,7 @@ public class PhotoListActivity extends AppCompatActivity {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //TODO
+                    PhotoActivity.start(v.getContext(), photo.getImageUrl());
                 }
             });
         }
